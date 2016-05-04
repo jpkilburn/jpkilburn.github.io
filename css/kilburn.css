@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700|Inconsolata);
 
 /********************************************************
  * Filename: kilburn.css
@@ -13,11 +14,26 @@
 /********************************************************
  *		Base HTML				
  ********************************************************/
-
+  html{
+    overflow-x:none;
+    overflow-y:scroll;
+  }
+  body{
+    font-family: 'Work Sans', sans-serif;
+    color:#333333;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Inconsolata', sans-serif;
+  }
+  footer{
+    text-align:center;
+  }
 /********************************************************
  *		Bootstrap Customization			
  ********************************************************/
-
+  .navbar-brand{
+    font-family: 'Inconsolata', sans-serif;
+  }
 /********************************************************
  *		FontAwesome Customization		
  ********************************************************/
@@ -25,9 +41,12 @@
 /********************************************************
  *		Custom Classes			
  ********************************************************/
-.main{
-  padding-top:60px;
-}
+  .main{
+    padding-top:60px;
+  }
+  .main  p{
+    font-size:120%;
+  }
 /********************************************************
  *		Viewport Specific			
  ********************************************************/
