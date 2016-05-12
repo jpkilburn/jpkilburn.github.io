@@ -17,33 +17,62 @@
   html{
     overflow-x:none;
     overflow-y:scroll;
+    position: relative;
+    min-height: 100%;
   }
   body{
     font-family: 'Work Sans', sans-serif;
-    color:#333333;
+    background: #ededed;
+    color: #282828;
+    margin-bottom: 40px;
   }
   h1,h2,h3,h4{
     font-family: 'Inconsolata', sans-serif;
   }
   footer{
+    margin-top:30px;
     text-align:center;
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    padding:5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
   }
 /********************************************************
  *		Bootstrap Customization			
  ********************************************************/
-  .navbar-brand{
+  .navbar-default .navbar-brand{
     font-family: 'Inconsolata', sans-serif;
+  }
+  .navbar-text{
+    font-size:100%;
+    margin:0px;
+    padding:0px;
+  }
+  .navbar-inverse{
+    border-radius:0px;
+  }
+  .navbar-collapse{
+    padding-right:0px;
+    padding-left:0px;
   }
 /********************************************************
  *		FontAwesome Customization		
  ********************************************************/
-
+  footer .fa{
+    color:#a5a5a5;
+  }
+  footer .fa:hover{
+    color:#ededed;
+  }
+  footer a{
+    text-decoration:none !important;
+  }
 /********************************************************
  *		Custom Classes			
  ********************************************************/
-  .main{
-    padding-top:60px;
-  }
   .main  p{
     font-size:120%;
   }

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
     integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="css/kilburn.css">
+    <link rel="stylesheet" href="css/glass.css">
 		
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,50 +36,78 @@
   </head>
   <body>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">&lt; jpkilburn &gt;</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#about"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <div class="navbar navbar-inverse twoRow">
+			<!-- Header -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" 
+							data-toggle="collapse" 
+							data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						&lt;&nbsp;jpkilburn&nbsp;&gt;
+					</a>
+				</div>
+			</div>
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse">
+				<nav class="btn-bar nav-dark">
+					<a href="index.html" class="btn btn-glass btn-primary">
+            Home
+					</a>
+          <a href="about.html" class="btn btn-glass btn-primary">
+            About Me
+					</a>
+          <a href="resume.html" class="btn btn-glass btn-primary">
+            Resume
+					</a>
+          <a href="portfolio.html" class="btn btn-glass btn-primary">
+            Portfolio
+					</a>
+				</nav>
+			</div>
+		</div>
   
     <div class="container main">
-    
       <div class="row">
         <!-- Main Content -->
         <div class="col-md-12">
 
-          <center><h1>
-            <strong>Jordan Calvo</strong><br />
-            <small>Web Developer</small>
-          </h1></center>
+          <center>
+            <h1>
+              <strong>Jordan Calvo</strong><br />
+              <small>Web Development and Design</small>
+            </h1>
+          </center>
+          
+          <h2>Welcome!</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper mauris nibh, nec tristique nunc pharetra eu. Curabitur imperdiet placerat sapien id scelerisque. Mauris dignissim sem ut nisi accumsan rhoncus. Ut semper lorem vel turpis dignissim tincidunt. Nunc leo erat, aliquam vitae fringilla ut, semper ut leo. Maecenas laoreet ornare bibendum. Praesent imperdiet laoreet ligula sit amet laoreet. Fusce mauris eros, tristique quis felis consectetur, consectetur dictum velit. Cras enim metus, ultrices id libero sed, mattis viverra metus. Vestibulum bibendum interdum blandit.</p>
 
+          <p>Nullam venenatis placerat elit condimentum venenatis. In hac habitasse platea dictumst. Ut laoreet nibh velit, sed blandit libero cursus non. Vestibulum nec augue a mi vehicula scelerisque sit amet eget neque. Vestibulum at mi et purus interdum euismod nec auctor nisi. Donec in porta est, in porta ligula. Pellentesque molestie orci in tempus condimentum. Aliquam vitae egestas dui, vel tempor arcu.</p>
         </div>
       </div>
-      
-      <footer>
-        Test Footer
-      </footer>
-      
     </div>
+    
+    <footer>
+      <div class="container">
+        <div class="pull-right">
+          <a href="">
+            <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+          </a>
+          &nbsp;
+          <a href="">
+            <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+          </a>
+          &nbsp;
+          <a href="">
+            <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
    
     <!-- Scripting: jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
