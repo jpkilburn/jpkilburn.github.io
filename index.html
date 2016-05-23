@@ -13,4 +13,10 @@ title: Jordan Calvo - Web Development and Design
   <p>Hello! I'm Jordan, and I'm a recent graduate from the University of North Alabama. I've created this site both to serve as an online resume and portfolio (as well as an example of my work), and to give myself some more experience working with Git.</p>
   <p>Thanks for visiting!</p>
   <h4><em>-Jordan</em> <small>Updated 5/6/16</small></h4>
+  
+  <ul class="posts">
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
 </div><!-- /.blurb -->
