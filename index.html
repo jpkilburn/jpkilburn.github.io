@@ -11,7 +11,7 @@ title: Jordan Calvo - Web Development and Design
   
   <br />
   <h2>Recent Updates</h2>
-  <ul class="posts">
+  <ul style="list-style: none;" class="posts">
 	  {% for post in site.posts limit:5 %}
 	    <li>
         <h3><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
@@ -19,6 +19,17 @@ title: Jordan Calvo - Web Development and Design
       </li>
 	  {% endfor %}
   </ul>
+  
+  {% for post in site.posts limit:3 %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+      </div>
+      <div class="panel-body">
+        {{ post.content }}
+      </div>
+    </div>    
+  {% endfor %}
   
   <a href="/blog">View All</a>
   
