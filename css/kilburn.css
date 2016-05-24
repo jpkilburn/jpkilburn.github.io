@@ -46,6 +46,9 @@
 /********************************************************
  *		Bootstrap Customization			
  ********************************************************/
+  .navbar{
+    margin-bottom:0px;
+  }
   .navbar-default .navbar-brand{
     font-family: 'Inconsolata', sans-serif;
   }
