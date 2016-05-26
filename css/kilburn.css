@@ -106,13 +106,19 @@
 /********************************************************
  *		Viewport Specific			
  ********************************************************/
-  @media only screen and (max-width : 480px) {
+  @media only screen and (max-width : 992px) {
     .banner{
       height: 150px;
       padding-top: 20px;
     }
   }
-  @media only screen and (min-width : 768px) {
+  @media only screen and (max-width : 768px) {
+    .banner{
+      height: 150px;
+      padding-top: 20px;
+    }
+  }
+  @media only screen and (max-width : 480px) {
     .banner{
       height: 150px;
       padding-top: 20px;
