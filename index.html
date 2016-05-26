@@ -16,7 +16,7 @@ title: Jordan Calvo - Web Development and Design
         <h3 class="panel-title"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       </div>
       <div class="panel-body">
-        {{ post.content }}
+        {{ post.excerpt }}
       </div>
     </div>    
   {% endfor %}
