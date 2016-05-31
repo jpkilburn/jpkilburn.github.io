@@ -13,7 +13,7 @@ title: Jordan Calvo - Web Development and Design
   {% for post in site.posts limit:3 %}
     <div class="list-group-item">
       <h4 class="list-group-item-heading"><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-      <p class="list-group-item-text">{{ post.excerpt }}</p>
+      <div class="list-group-item-text">{{ post.excerpt }}</div>
       <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><em>Read More</em></a>
     </div>
   {% endfor %}
