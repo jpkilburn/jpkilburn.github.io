@@ -103,8 +103,8 @@
   .banner h1, .banner h2{
     background:rgba(0,0,0,0.6);
   }
-  li .active{
-    background-color:gray;
+  li.active{
+    background-color:rgba(0,0,0,.1);
   }
 /********************************************************
  *		Viewport Specific			
