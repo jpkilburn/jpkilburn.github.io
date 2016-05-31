@@ -11,7 +11,7 @@ layout: default
 </div>
 <div class="col-md-3">
   <h1>Posts</h1>
-  <ul class="posts" style="list-style: none;">
+  <ul class="posts" style="list-style: none; padding: 0;">
 	  {% for post in site.posts %}
       {% if page.title == post.title %}
 	    <li class="active"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
