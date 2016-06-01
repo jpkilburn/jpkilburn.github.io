@@ -4,6 +4,7 @@ title: "Responsive Templates"
 date: 2016-05-24
 excerpt_separator: <!--more-->
 ---
+
           Jekyll has been a great addition to the site and I'm liking the new style of 
           templating, but it seems that I'm going to need to fine-tune some things for 
           it to work on a mobile screen. At the moment everything looks a bit too small 
