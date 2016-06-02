@@ -107,7 +107,7 @@
     background:rgba(0,0,0,0.6);
   }
   .post-content{
-    background: rgba(0,0,0,.1);
+    background: rgba(0,0,0,.05);
     padding: 10px;
     border-style: groove;
     border-color: rgba(0,0,0,.3);
