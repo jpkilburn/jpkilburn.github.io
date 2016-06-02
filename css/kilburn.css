@@ -67,6 +67,19 @@
   .well{
     padding-top:0px;
   }
+  .list-group-item.active{
+    background:#DFDFDF;
+    border-color:#DFDFDF;
+    color:#282828;
+    text-shadow: 0 -1px 0 gray;
+    
+  }
+  .list-group-item.active:hover{
+    background:#B5B5B5;
+    border-color:#B5B5B5;
+    color:#282828;
+    text-shadow: 0 -1px 0 black;
+  }
 /********************************************************
  *		FontAwesome Customization		
  ********************************************************/
@@ -107,11 +120,19 @@
     background:rgba(0,0,0,0.6);
   }
   .post-content{
-    background: rgba(0,0,0,.05);
+    background: #E2E2E2;
     padding: 10px;
-    border-style: groove;
-    border-color: rgba(0,0,0,.3);
-    border-width: 4px;
+    border: solid #A9A9A9 2px;
+    border-top:none;
+  }
+  .post h1{
+    color: rgba(255, 255, 255, 0.7);
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    margin-bottom:0px;
+    padding:5px;
+    padding-left:10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
   }
 /********************************************************
  *		Viewport Specific			
