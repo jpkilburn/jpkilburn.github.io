@@ -106,6 +106,13 @@
   .banner h1, .banner h2{
     background:rgba(0,0,0,0.6);
   }
+  .post-content{
+    background: rgba(0,0,0,.1);
+    padding: 10px;
+    border-style: groove;
+    border-color: rgba(0,0,0,.3);
+    border-width: 4px;
+  }
 /********************************************************
  *		Viewport Specific			
  ********************************************************/
