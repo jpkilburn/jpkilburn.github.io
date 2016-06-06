@@ -1,11 +1,15 @@
 ---
 layout: post
 title: "Responsive Templates"
-date: 2016-05-24
+date: 2016-06-06
 excerpt_separator: <!--more-->
 image: "http://www.sketchappsources.com/resources/source-image/jekyll-logo-sketch.png"
 ---
 
-Jekyll has been a great addition to the site and I'm liking the new style of templating, but it seems that I'm going to need to fine-tune some things for it to work on a mobile screen. At the moment everything looks a bit too small on my iPod, and it looks as if the navigation bar isn't collapsing appropriately- so, that's my current task. <!--more--> I've also been working on making the homepage more presentable, including the addition of a new responsive banner and a better display for these updates I'm writing. At the moment only the homepage is handling them well, though; I'll need to work on the blog and individual post pages, since at the moment they're fairly bare-bones.
+Jekyll has been a great addition to the site and I enjoy the new style of templating, but it's inclusion does appear to have made some issues for my original design. I'm now going through and fine-tuning my templates to make sure everything remains mobile responsive, and that all of my resources such as my image and CSS folders are being properly accessed.<!--more-->
 
-In the future I'm likely going to want to change these front-page updates to be snippets of posts rather than full content displays, since I'm likely going to be adding more length and images as I transition from designing this personal site to maintaining it as a blog.
+
+I've also been working on making the homepage more presentable. While I'm not personally a fan of the large <a href="http://marketblog.envato.com/web-design/exploring-hero-image-trend-web-design/">hero banner</a> design many sites use, I do enjoy a prominent title banner to grab the attention of the viewer. I've grabbed a stock image from <a href="https://stocksnap.io/">StockSnap</a> to accomplish that, and I think it fits the more muted color scheme I'm using on this site pretty well.
+
+
+I'll still be going through and adjusting the post layouts, since at the moment they're fairly bare-bones. In the future the hope is to change the current front-page feed into small snippets of posts, rather than a full content display or a simple title. Thankfully there's some easy ways to implement this in Jekyll, so I'll just need to restructure them a little with an <strong>excerpt_separator</strong> to add that functionality in.
