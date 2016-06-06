@@ -80,6 +80,14 @@
     color:#282828;
     text-shadow: 0 -1px 0 black;
   }
+  .btn-primary{
+    color: white;
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+  }
+  .btn-primary:hover{
+    color: white;
+    background-image: linear-gradient(to bottom,#232323 0,#222 100%);
+  }
 /********************************************************
  *		FontAwesome Customization		
  ********************************************************/
