@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Looking Forward"
-date: 2016-06-01
+date: 2016-06-06
 excerpt_separator: <!--more-->
 image: "https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/google_blog_search-.png"
 ---

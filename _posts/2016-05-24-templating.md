@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Responsive Templates"
-date: 2016-06-06
+date: 2016-05-24
 excerpt_separator: <!--more-->
 image: "http://www.sketchappsources.com/resources/source-image/jekyll-logo-sketch.png"
 ---
