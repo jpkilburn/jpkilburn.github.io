@@ -1,10 +1,25 @@
 ---
 layout: default
-title: Blog
+title: Blog Index
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+  
+	<div class="list-group">  
+  {% for post in site.posts limit:3 %}
+    <div class="list-group-item hidden-sm hidden-xs">
+      <h4 class="list-group-item-heading"><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+      <div class="list-group-item-text row">
+        <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive pull-left" style="max-height:100px; margin: 5px 5px 5px 17px;" />{{ post.excerpt }}
+      </div>
+      <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><em>Read More</em></a>
+    </div>
+  {% endfor %}
+  </div>
+  
+  <div class="list-group visible-sm visible-xs">  
+  {% for post in site.posts limit:3 %}
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading"><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+    </div>
+  {% endfor %}
+  </div>
