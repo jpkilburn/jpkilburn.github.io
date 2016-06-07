@@ -6,7 +6,7 @@ excerpt_separator: <!--more-->
 image: "https://cdn.tutsplus.com/webdesign/uploads/2013/10/skeleton-retina.png"
 ---
 
-Jumping straight into some (slightly) new material, I've decided to start doing some development with <a href="http://getskeleton.com/">Skeleton</a>. 
+Jumping straight into some (slightly) new material, I've decided to start doing some learning and development with <a href="http://getskeleton.com/">Skeleton</a>. Skeleton is a lightweight CSS boilerplate for producing responsive designs. It doesn't come with all of the additional features you'll find in Bootstrap and some other frameworks, instead allowing the developer to add in what their site needs. It reduces bloat and is a strong fit for small scale sites, or ones that are primarily delivering static content.<!--more-->
 
 Up until this point I've generally turned to Bootstrap for all of my responsive needs. I was first introduced to frameworks with Bootstrap and it's a standard tool to use, so it's not really something I've paid a second thought to. However, after looking through some negative sentiments of it on Reddit, I decided to do some reading of my own. What I found wasn't entirely against Bootstrap; like many technologies, there are alternatives and there are certain times when those alternatives may be a better option. I did find an <a href="http://www.zingdesign.com/5-reasons-not-to-use-twitter-bootstrap/">article by Zing Design</a> that I read through and found some valid points on, though.
 
