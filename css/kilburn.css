@@ -138,7 +138,7 @@
   .post h1{
     color: white;
     background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
-    margin-bottom:0px;
+    margin-bottom:5px;
     padding:5px;
     padding-left:10px;
     border-top-right-radius: 10px;
@@ -153,15 +153,9 @@
       padding-top: 20px;
     }
   }
-  @media only screen and (max-width : 768px) {
-    .banner{
-      height: 150px;
-      padding-top: 20px;
-    }
-  }
-  @media only screen and (max-width : 480px) {
-    .banner{
-      height: 150px;
-      padding-top: 20px;
+
+  @media only screen and (max-width : 320px) {
+    .post h1{
+      font-size:160%;
     }
   }
