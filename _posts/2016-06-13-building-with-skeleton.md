@@ -18,4 +18,4 @@ In the future I may go back and rewrite this site with Skeleton, since these pag
 Next I plan to either start looking into Magento, or continue developing with MEAN Stack programming.
 
 
-<a href="http://jpkilburn.github.io/skeleton" target="blank" class="btn btn-block btn-lg">Skeleton Example Page</a>
+<a href="http://jpkilburn.github.io/skeleton" target="blank" class="btn btn-primary btn-block btn-lg">Skeleton Example Page</a>
