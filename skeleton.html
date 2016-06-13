@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Skeleton Theme</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/skeletest.css">
+
+    <link rel="icon" type="image/png" href="images/skeleton.png">
+  </head>
+  <body>
+
+    <div class="row header">
+      <h2>Built with Skeleton</h2>
+      <nav class="desktop container">
+        <a href="http://jpkilburn.github.io/" class="button">Home</a>
+        <a href="#" class="button">Link 2</a>
+        <a href="#" class="button">Link 3</a>
+        <a href="#" class="button">Link 4</a>
+        <a href="#" class="button">Link 5</a>
+      </nav>
+      <nav class="mobile">
+        <button><i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+        <hr>
+        <div>
+          <a href="http://jpkilburn.github.io/">Home</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="container main">
+      <div class="row ">
+        <p>This page was developed using the <a href="http://getskeleton.com/" target="_blank">Skeleton</a> framework. 
+        It's simple, but that's the point!</p>
+        
+        <p>Skeleton is a lightweight CSS boilerplate for responsive web design. It comes with a responsive grid and 
+        some light styling, but most features are up to the developer to create or add. By doing this we can prevent 
+        bringing in a load of JavaScript and CSS for a simple page-- like this one-- and we can still enjoy a mobile 
+        responsive framework.</p>
+        
+        <p>I've created a small CSS file to add back some features from Bootstrap that are not found in Skeleton by 
+        default. I've also added in a navigation bar above.</p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <img src="http://beebom.redkapmedia.netdna-cdn.com/wp-content/uploads/2015/01/skeleton.jpg" class="u-max-full-width rounded" />
+        </div>
+        <div class="six columns">
+          <img src="https://i.ytimg.com/vi/Qu9z8ecA69c/maxresdefault.jpg" class="u-max-full-width circle" />
+        </div>
+      </div>
+      <div class="row">
+        <img src="http://rigor.com/wp-content/uploads/2015/12/CSS.png" class="u-max-full-width pull-right" />
+        <br />
+        <p>The images above are simple circle and rounded classes, using the <strong>u-max-full-width</strong> class 
+        from Skeleton to make them display responsively. The image to the right is using a <strong>pull-right</strong> class. 
+        If you're viewing this on a mobile device or resize your browser's window they should all shrink down and 
+        continue to display properly, while being pulled onto their own lines for better viewing.</p>
+        <p>With the snippets of code I've assembled from this test-run I should be able to develop lighter pages that are 
+        both cleaner to read from a developer's standpoint, and more efficient for users to access.</p>
+      </div>
+      <div class="row">
+        <h3>Responsive Youtube Embed</h3>
+        <p>The video below is also responsive.</p>
+        <div class="vid-responsive">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XUClIslXKZo" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <br />
+      
+      <footer>
+        <h4>Sample Pagination Buttons</h4>
+        <div class="row pagination">
+          <div class="six columns">
+            <a href="#" class="button button-primary u-full-width">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+              Previous
+           </a>
+          </div>
+          <div class="six columns">
+            <a href="#" class="button button-primary u-full-width">
+              Next 
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      $('button').click(function() {
+        $(this).toggleClass('expanded').siblings('div').slideToggle();
+      });
+    </script>
+  </body>
+</html>
