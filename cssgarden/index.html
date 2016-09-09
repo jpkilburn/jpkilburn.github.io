@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Garden</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="hero.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+
+    <section class="row header">
+      <div class="container">
+        <h2>CSS Garden</h2>
+        <nav class="desktop">
+          <a href="#" class="button">Link 1</a>
+          <a href="#" class="button">Link 2</a>
+          <a href="#" class="button">Link 3</a>
+          <a href="#" class="button">Link 4</a>
+        </nav>
+      </div>
+      <nav class="mobile">
+        <button><i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+        <hr>
+        <div>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </nav>
+    </section>
+  
+    <section class="container main">
+      <div class="row ">
+        <h1 class="title">Title</h1>
+        <p>This is a personal CSS Garden, inspired by the <a href="http://www.csszengarden.com/">CSS Zen Garden</a>. The goal of these pages is to create a series of different layouts and themes, all using the same base HTML. If one page has it, they all have it. The personally imposed limitation is to only change the CSS file and the title of the page. Unless otherwise stated on the garden's index, the only boilerplate CSS I'm using is Skeleton, with some basic classes I created for ease of formatting.</p>
+        <p>The rest of this text will be random filler.</p>
+        
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper lorem mattis lacus imperdiet mattis. Curabitur bibendum tortor neque, eget vestibulum libero consequat quis. Duis vestibulum imperdiet enim, in posuere justo tincidunt in. Sed dictum rhoncus arcu, at laoreet ante. Duis dignissim eros non urna ullamcorper, vel porta erat blandit. Proin dui magna, blandit sed nibh ut, interdum pharetra lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce cursus eget orci eu euismod. Mauris tempor nibh eget justo pretium pretium. Sed id nisl interdum, sollicitudin sapien ac, ultricies dui. Integer nec hendrerit eros, vitae suscipit tellus. In et tempus urna. Ut laoreet eros ut ligula ornare accumsan. Aenean bibendum facilisis aliquam.</p>
+
+        <p>Suspendisse eu massa accumsan risus mollis lobortis. Cras ac sem enim. Maecenas id nulla est. Ut ut tincidunt tortor. Integer vel consequat orci. Donec aliquet tristique sapien, sit amet molestie libero fermentum a. Aliquam sodales elementum orci pharetra tempor. Nulla vitae consectetur arcu, nec viverra tellus. In id aliquam ex. Aliquam eget rhoncus magna. Maecenas quis bibendum tortor.</p>
+        
+        <h3>Heading</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Cras cursus tortor id nisi ullamcorper, id sagittis nisi egestas.</li>
+          <li>Donec pharetra purus sed justo gravida iaculis.</li>
+          <li>Duis euismod nibh at congue suscipit.</li>
+          <li>Duis vel diam non est ornare aliquet non at ex.</li>
+        </ul>
+        <ol>
+          <li>Sed dapibus diam sit amet luctus egestas.</li>
+          <li>Nullam elementum ex at justo cursus, vel convallis lacus porta.</li>
+          <li>In ut justo et nisi facilisis euismod.</li>
+        </ol>
+      </div>
+      
+      <footer>
+        <a href="#" class="button">Garden Index</a>
+      </footer>
+    </section>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      $('button').click(function() {
+        $(this).toggleClass('expanded').siblings('div').slideToggle();
+      });
+    </script>
+  </body>
+</html>
