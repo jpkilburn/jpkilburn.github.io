@@ -6,16 +6,20 @@
   <body>
     {% include header.html %}
     
-    <div class="banner">
-      <h1 class="visible-md visible-lg visible-xl">
-        <strong>Jordan Calvo</strong><br />
-        Web Development and Design
-      </h1>
-      <h2 class="visible-xs visible-sm" style="text-align:center;">
-        <strong>Jordan Calvo</strong><br />
-        Web Development and Design
-      </h2>
-    </div>
+    <section class="banner">
+      <div class="container">
+        <h1 style="border:none">Clean and Responsive Designs</h1>
+        <div class="row index-banner">
+          <div class="five columns offset-by-one">
+            <img src="imgs/bannerGraphic.png" style="width:300px; padding:2rem;" class="img-center u-max-full-width">
+          </div>
+          <div class="four columns banner-btns">
+            <a href="#" class="button button-primary u-full-width">My Work</a>
+            <a href="#" class="button button-primary u-full-width">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <div class="container main">
       {{ content }}

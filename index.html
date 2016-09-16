@@ -15,7 +15,7 @@ title: Jordan Calvo - Web Development and Design
     <div class="one-third column">
       <h2>Latest Posts</h2>
       <ul>
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:5 %}
           <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><li class="button list-btn">{{ post.title }}</li></a>
         {% endfor %}
       </ul>
