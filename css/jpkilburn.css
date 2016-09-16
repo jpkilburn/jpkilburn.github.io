@@ -179,6 +179,9 @@
     margin-top: 1.5rem;
     border: none;
   }
+  .contentblock img{
+    max-width: 100%;
+  }
   
 /* 5. footer ---------------- */
   .footer {
