@@ -147,14 +147,13 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     border-top: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
   .blog-excerpt p{
     margin-bottom: 0px;
   }
   .blog-list .button{
-    margin-bottom: 0px; 
-    margin-top: .8rem;
+    margin-bottom: .5rem; 
   }
   .contentblock{
     background: #F2F2F2;
