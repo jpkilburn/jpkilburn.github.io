@@ -2,29 +2,20 @@
 layout: default
 title: Blog Index
 ---
-	<h1>{{ page.title }}</h1>
+
+  <div class="row">
   
-	<div class="list-group">  
-  {% for post in site.posts limit:10 %}
-    <div class="list-group-item hidden-sm hidden-xs">
-      <h4 class="list-group-item-heading"><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-      <div class="list-group-item-text row">
-        <div class="col-md-2">
-          <img src="{{ post.image }}" alt="{{ post.title }}" class="img-responsive center" style="max-height:100px; margin: 5px 5px 5px 17px;" />
-        </div>
-        <div class="col-md-10">
-          {{ post.excerpt }}
-        </div>
-      </div>
-      <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><em>Read More</em></a>
+    <p>Like anyone in the field of technology, I'm always learning. Here I'll post some thoughts and projects from the new technologies I'm working with, or other notable announcements.</p>
+    
+    <div class="blog-list">
+      {% for post in site.posts limit:10 %}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png" width=100px class="u-pull-left">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt }}
+        <br />
+        <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><a href="#" class="button button-dark">Read More</a></a>
+        </p>
+      {% endfor %}
     </div>
-  {% endfor %}
-  </div>
-  
-  <div class="list-group visible-sm visible-xs">  
-  {% for post in site.posts limit:10 %}
-    <div class="list-group-item">
-      <h4 class="list-group-item-heading"><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-    </div>
-  {% endfor %}
+    
   </div>
