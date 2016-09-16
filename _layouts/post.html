@@ -1,7 +1,18 @@
----
-layout: default
-title: Jordan's Blog
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    
+    <section class="banner">
+      <div class="container">
+        <h1 style="border:none">Jordan's Blog</h1>
+      </div>
+    </section>
+    
+    <div class="container main">
       <div class="row">
       
         <div class="two-thirds column contentblock">
@@ -23,3 +34,8 @@ title: Jordan's Blog
           <a href="" class="button button-dark list-btn">Blog Index</a>
         </div>
       </div>
+    </div><!-- /.container -->
+
+    {% include footer.html %}
+  </body>
+</html>
