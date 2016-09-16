@@ -4,3 +4,10 @@
         <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jpkilburn1@gmail.com" target="blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
       </div>
     </section>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+      $('button').click(function() {
+        $(this).toggleClass('expanded').siblings('div').slideToggle();
+      });
+    </script>
