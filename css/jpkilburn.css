@@ -87,7 +87,7 @@
   }
   .mobile {
     background: black;
-    background-image:url("jpkilburnblack.png");
+    background-image:url("../imgs/jpkilburnblack.png");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 112px;
@@ -140,7 +140,8 @@
     margin:0px; 
     border-top-right-radius:3rem; 
   }
-  .blog-list p{
+  .blog-excerpt{
+    background:#F2F2F2;
     padding-left: 10rem;
     border: solid black 2px;
     border-top-right-radius: 0px;
