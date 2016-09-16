@@ -147,6 +147,10 @@
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     border-top: none;
+    margin-bottom: 1rem;
+  }
+  .blog-excerpt p{
+    margin-bottom: 0px;
   }
   .blog-list .button{
     margin-bottom: 0px; 
