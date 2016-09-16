@@ -9,8 +9,8 @@ title: Blog Index
     
     <div class="blog-list">
       {% for post in site.posts limit:10 %}
-        <img src="{{ post.image }}" width=100px class="u-pull-left">
         <h3>{{ post.title }}</h3>
+        <img src="{{ post.image }}" width=100px class="u-pull-left blog-img">
         <div class="blog-excerpt">
           {{ post.excerpt }}
           <a href="{{ post.url }}" title="{{ post.title }}" class="button button-dark">Read More</a>
