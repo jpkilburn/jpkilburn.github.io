@@ -9,11 +9,11 @@ title: Blog Index
     
     <div class="blog-list">
       {% for post in site.posts limit:10 %}
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png" width=100px class="u-pull-left">
+        <img src="{{ post.image }}" width=100px class="u-pull-left">
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt }}
         <br />
-        <a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default"><a href="#" class="button button-dark">Read More</a></a>
+        <a href="{{ post.url }}" title="{{ post.title }}" class="button button-dark">Read More</a>
         </p>
       {% endfor %}
     </div>
