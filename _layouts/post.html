@@ -1,25 +1,24 @@
 ---
 layout: default
 ---
-      <div class="col-md-9 post">
-        <h1>{{ page.title }}</h1>
-        <div class="post-content">
-          <p class="meta">{{ page.date | date_to_string }}</p>
+      <div class="row">
+      
+        <div class="two-thirds column contentblock">
+          <h2>{{ page.title }}</h2>
+          <p><small>Posted on {{ page.date | date_to_string }}</small></p>
           {{ content }}
         </div>
-      </div>
-      <div class="col-md-3 post">
-          <div class="hidden-sm hidden-xs">
-            <h1>Latest Posts</h1>
-            <div class="list-group">
-              {% for post in site.posts limit:9 %}
-                {% if page.title == post.title %}
-                <a href="{{ post.url }}" title="{{ post.title }}" class="list-group-item active">{{ post.date | date_to_string }} » {{ post.title }}</a>
-                {% else %}
-                <a href="{{ post.url }}" title="{{ post.title }}" class="list-group-item">{{ post.date | date_to_string }} » {{ post.title }}</a>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </div>
-          <a href="/blog" class="btn btn-lg btn-block btn-default">Blog Index</a>
+        <div class="one-third column">
+          <h2>Recent Posts</h2>
+          <ul>
+            {% for post in site.posts limit:9 %}
+              {% if page.title == post.title %}
+              <a href="{{ post.url }}" title="{{ post.title }}"><li class="button list-btn button-primary">{{ post.title }}</li></a>
+              {% else %}
+              <a href="{{ post.url }}" title="{{ post.title }}"><li class="button list-btn">{{ post.title }}</li></a>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <a href="" class="button button-dark list-btn">Blog Index</a>
+        </div>
       </div>
