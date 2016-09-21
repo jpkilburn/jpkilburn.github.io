@@ -862,7 +862,7 @@ there.
  ********************************************************/
 /* General -------------------------------------------- */
 html {
-  overflow-x: none;
+  overflow-x: hidden;
   overflow-y: scroll; }
 
 a:focus {
