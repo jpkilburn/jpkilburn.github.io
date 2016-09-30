@@ -9,12 +9,14 @@ title: Jordan's Blog
     
     <div class="blog-list">
       {% for post in site.posts limit:10 %}
-        <h3>{{ post.title }}</h3>
-        <img src="{{ post.image }}" width=100px class="u-pull-left blog-img">
-        <div class="blog-excerpt">
-          {{ post.excerpt }}
-          <a href="{{ post.url }}" title="{{ post.title }}" class="button button-dark">Read More</a>
-        </div>
+        {% if post.categories contains 'blog' %}
+          <h3>{{ post.title }}</h3>
+          <img src="{{ post.image }}" width=100px class="u-pull-left blog-img">
+          <div class="blog-excerpt">
+            {{ post.excerpt }}
+            <a href="{{ post.url }}" title="{{ post.title }}" class="button button-dark">Read More</a>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
     
