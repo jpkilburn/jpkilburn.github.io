@@ -13,7 +13,10 @@ title: My Portfolio
         
           {% for post in site.posts %}
             {% if post.categories contains 'project' %}
-              <li class="button list-btn"><a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default">{{ post.title }}</a></li>
+              <div class="blog-excerpt">
+                <img src="{{ post.image }}" class="img-center u-max-full-width" />
+                {{ post.excerpt }}
+              </div>
             {% endif %}
           {% endfor %}
         
