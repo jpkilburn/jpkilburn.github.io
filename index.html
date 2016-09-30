@@ -16,7 +16,9 @@ title: Jordan Calvo - Web Development and Design
       <h2>Latest Posts</h2>
       <ul>
         {% for post in site.posts limit:5 %}
-          <li class="button list-btn"><a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default">{{ post.title }}</a></li>
+          {% if post.categories contains 'blog' %}
+            <li class="button list-btn"><a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default">{{ post.title }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
