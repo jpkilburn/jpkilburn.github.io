@@ -1,5 +1,6 @@
 ---
 layout: post
+category: blog
 title: "Site Redesign"
 date: 2016-09-19
 excerpt_separator: <!--more-->
