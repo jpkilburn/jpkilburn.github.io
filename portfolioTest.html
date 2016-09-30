@@ -14,7 +14,7 @@ title: My Portfolio
           {% for post in site.posts %}
             {% if post.categories contains 'project' %}
               <h3>{{ post.title }}</h3>
-              <div class="blog-excerpt" style="padding-left:0px;>
+              <div class="blog-excerpt" style="padding-left:0px;">
                 <img src="{{ post.image }}" class="img-center u-max-full-width" />
                 {{ post.excerpt }}
               </div>
