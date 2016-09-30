@@ -1,0 +1,45 @@
+---
+layout: default
+title: My Portfolio
+---
+<div class="blurb">
+
+  <div class="row">
+        <p>Here are some examples of previous projects I've worked on. At the moment this list is somewhat short, but I'm eager to expand it! In the meantime you can view some of my practice and personal work in design in my <a href="design-gallery.html">Design Gallery</a>, or view my <a href="resume.html">resume</a>.</p>
+        
+        <h2>Projects I've Worked On</h2>
+        
+        <div class="blog-list">
+        
+          {% for post in site.posts %}
+            {% if post.categories contains 'project' %}
+              <li class="button list-btn"><a href="{{ post.url }}" title="{{ post.title }}" class="btn btn-default">{{ post.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        
+          <!--<h3>UNA Social Media Directory - Spring 2016</h3>
+          <img src="https://www.una.edu/logo/images/thumbs/1color.jpg" class="u-pull-left blog-img">
+          <div class="blog-excerpt">
+            <p>As part of my employment for the University of North Alabama's communications department I created a Social Media Directory app that is used to manage the various accounts relevant to UNA. With this app the university webmaster is able to view the full list of accounts and manage their information, while the public facing portion displays only verified and active accounts to visitors.</p>
+            <a href="https://www.una.edu/socialmedia/directory/" target="blank" class="button button-dark">View Project</a>
+          </div>
+          
+          <h3>NAACP Tri-County Branch of Alabama - Spring 2016</h3>
+          <img src="http://naacptricountyalabama.org/img/naacpLogoMd.png" class="u-pull-left blog-img">
+          <div class="blog-excerpt">
+            <p>Developed as a project for my Computer Information Systems capstone class at the University of North Alabama, this site was taken from concept to full deployment during my senior year. As lead developer for my team I created the site's layout, developed it's submittable forms, formatted most pages and added embeds for external content.</p>
+            <a href="http://naacptricountyalabama.org/" target="blank" class="button button-dark">View Project</a>
+          </div>
+          
+          <h3>Shoals Symphony at UNA - Summer 2015</h3>
+          <img src="https://www.una.edu/logo/images/thumbs/1color.jpg" class="u-pull-left blog-img">
+          <div class="blog-excerpt">
+            <p style="padding-bottom:2rem;">My first experience with designing and deploying a complete site, the Shoals Symphony site was deployed with a fully responsive design and makes use of PHP for templating pages and submitting forms for the symphony's organizers.</p>
+            <a href="https://www.una.edu/shoals-symphony/" target="blank" class="button button-dark">View Project</a>
+          </div>-->
+          
+        </div>
+      </div>
+      
+</div><!-- /.blurb -->
+
